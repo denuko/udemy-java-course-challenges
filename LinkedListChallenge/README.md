@@ -1,42 +1,20 @@
 ## Challenge description
-### Purpose
-The purpose of this challange is to solidify OOP concepts, such as Inheritance, Composition, Polymorphism and Encapsulation.
 
 ### Description as given by course
 
-The purpose of the application is to help a company called Bills Burgers to manage their process of selling hamburgers.
-Our application will help Bill to select types of burgers, some of the additional items (additions) to be added to the burgers 
-and pricing.
-We want to create a base hamburger, but also two other types of hamburgers that are popular ones in Bills store.
-
-The basic hamburger should have the following items.
-Bread roll type, meat and up to 4 additional additions (things like lettuce, tomato, carrot, etc) that
-the customer can select to be added to the burger.
-Each one of these items gets charged an additional price so you need some way to track how many items got added
-and to calculate the final price (base burger with all the additions).
-This burger has a base price and the additions are all separately priced (up to 4 additions, see above).
-Create a Hamburger class to deal with all the above.
-The constructor should only include the roll type, meat and price, can also include name of burger or you can use a setter.
-
-Also create two extra varieties of Hamburgers (subclasses) to cater for 
-a) Healthy burger (on a brown rye bread roll), plus two addition items that can be added.
-The healthy burger can have 6 items (Additions) in total.
-hint:  you probably want to process the two additional items in this new class (subclass of Hamburger),
-not the base class (Hamburger), since the two additions are only appropriate for this new class (in other words new burger type).
-
-b) Deluxe hamburger - comes with chips and drinks as additions, but no extra additions are allowed.
-hint:  You have to find a way to automatically add these new additions at the time the deluxe burger
-object is created, and then prevent other additions being made.
-        
-All 3 classes should have a method that can be called anytime to show the base price of the hamburger
-plus all additionals, each showing the addition name, and addition price, and a grand/final total for the
-burger (base price + all additions)
-For the two additional classes this may require you to be looking at the base class for pricing and then adding totals to 
-final price.
-
-## Extra notes
-### Improvement
-It would have been better if we used an ArrayList for additions as an instance variable of Hamburger 
-instead of a separate instance variable for each Addition subclass.
-However, I didn't implement such a solution since I used the way that has been explained in the course examples so far
-and Collections haven't still been introduced in the course.
+Create a program that implements a playlist for songs
+Create a Song class having Title and Duration for a song.
+The program will have an Album class containing a list of songs.
+The albums will be stored in an ArrayList Songs from different albums can be added to the playlist and will appear in
+the list in the order they are added.
+Once the songs have been added to the playlist, create a menu of options to:
+- Quit,
+- Skip forward to the next song,
+- skip backwards to a previous song.
+- Replay the current song.
+- List the songs in the playlist
+A song must exist in an album before it can be added to the playlist (so you can only play songs that you own).
+Hint:  To replay a song, consider what happened when we went back and forth from a city before we started tracking
+the direction we were going.
+ As an optional extra, provide an option to remove the current song from the playlist
+(hint: listiterator.remove()
