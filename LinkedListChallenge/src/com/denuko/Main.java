@@ -5,8 +5,8 @@ import java.util.*;
 public class Main {
 
     private static Scanner scanner = new Scanner(System.in);
-    private static LinkedList<Song> playlist = new LinkedList<>();
-    private static ArrayList<Album> albums = new ArrayList<>();
+    private static List<Song> playlist = new LinkedList<>();
+    private static List<Album> albums = new ArrayList<>();
 
     public static void main(String[] args) {
         Song cryOfAchilles = new Song("Cry Of Achilles", "6:31");
